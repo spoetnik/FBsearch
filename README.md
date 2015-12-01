@@ -1,6 +1,7 @@
 # FBsearch
 FB graph search page
-Inspired by  http://graph.tips/ https://twitter.com/henkvaness
+Inspired by  http://graph.tips/ 
+https://twitter.com/henkvaness
 
 Looking for ways to improve that tool.
 
