@@ -1,0 +1,14 @@
+body {
+
+  @include margin(0);
+  @include padding(0);
+
+}
+  .content {
+    @include outer-container;
+  }
+
+  .flex-boxes {
+  	@include outer-container;
+  	@include padding(null null 200px null);
+  }

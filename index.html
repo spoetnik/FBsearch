@@ -8,23 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="build/css/main.css">
+        <link rel="stylesheet" href="build/css/fbsearch.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
 
         <div class="main-container">
-            <div class="box">
-                <h1>Starter Gulp Boilerplate</h1>
-                <h3>Bourbon, Neat, HTML5BP, Normalize</h3>
-                <p>Pow! Let's do this</p>
-                <img src="img/pow.gif" alt="pow!">
-                <p>Includes some wizardry with node-bourbon and node-neat to make it work with Gulp</p>
-                <a href="http://laravelnews.tumblr.com/post/81295004156/using-bourbon-neat-with-gulp">http://laravelnews.tumblr.com/post/81295004156/using-bourbon-neat-with-gulp</a>
-            </div>
 
-
-            <div class="box">
+            <div class="content">
 
                 <input placeholder="USERNAME" name="" id="fb_username" type="text">
                 <input value="Get FB ID" id="fb_get" type="button">
@@ -34,43 +25,43 @@
                 <form onsubmit="postscommented(this.number.value); return false;">
                     <input name="number" class="fb_user_id" size="30" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> Posts that the person commented on?</strong><br>
+                    <label> Posts that the person commented on?</label><br>
                 </form>
 
                 <form onsubmit="photosliked(this.number.value); return false;">
                     <input name="number" class="fb_user_id" size="30" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> Which photos does this person like?</strong><br>
+                    <label> Which photos does this person like?</label><br>
                 </form>
 
                 <form onsubmit="photosof(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> Photos made of this person</strong><br>
+                    <label> Photos made of this person</label><br>
                 </form>
 
                 <form onsubmit="photostagged(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> In which photos is this person tagged?</strong><br>
+                    <label> In which photos is this person tagged?</label><br>
                 </form>
 
                 <form onsubmit="photoscommented(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> What photos did the person comment on? With what comment?</strong><br>
+                    <label> What photos did the person comment on? With what comment?</label><br>
                 </form>
 
                 <form onsubmit="photosfriendsuploaded(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong> What photos did the friends upload?</strong><br>
+                    <label> What photos did the friends upload?</label><br>
                 </form>
 
             </div>
 
 
-            <div class="box">
+            <div class="content">
                 <h1>NEW: SEARCH POSTINGS</h1>
                 <form name="fb-search">
                     <label>Search:
@@ -87,7 +78,7 @@
 
 
 
-            <div class="box">
+            <div class="content">
                 <h1>LOCATION SEARCH</h1>
                 <strong>Countries: who went where?</strong>
                 <div id="inputrows">
@@ -105,58 +96,58 @@
             </div>
 
 
-            <div class="box">
+            <div class="content">
                 <strong>Buildings: who went where?</strong>
                 <form onsubmit="allplaces(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong><em>All places,</em> Visited by</strong> <br>
+                    <label><em>All places,</em> Visited by</label> <br>
                 </form>
             </div>
 
-            <div class="box">
+            <div class="content">
                 <strong>Specify buildings</strong>
 
                 <form onsubmit="barsvisited(this.number.value); return false;">
                     <input name="number" class="fb_user_id" size="30" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Bars Visited by</strong> <br>
+                    <label>Bars Visited by</label> <br>
                 </form>
 
                 <form onsubmit="cafe(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Cafes Visited by</strong> <br>
+                    <label>Cafes Visited by</label> <br>
                 </form>
 
                 <form onsubmit="bookstores(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Bookstores Visited by</strong> <br>
+                    <label>Bookstores Visited by</label> <br>
                 </form>
 
                 <form onsubmit="gym(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Gyms Visited by</strong> <br>
+                    <label>Gyms Visited by</label> <br>
                 </form>
 
                 <form onsubmit="hotels(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Hotels Visited by</strong> <br>
+                    <label>Hotels Visited by</label> <br>
                 </form>
 
                 <form onsubmit="cinema(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Movie theatres Visited by</strong> <br>
+                    <label>Movie theatres Visited by</label> <br>
                 </form>
 
                 <form onsubmit="restaurants(this.number.value); return false;">
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <strong>Restaurants Visited by</strong> <br>
+                    <label>Restaurants Visited by</label> <br>
                 </form>
 
             </div>

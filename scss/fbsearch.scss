@@ -1,0 +1,42 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file "STARTER.scss". This file should be named
+ * adrenaline.scss. If you used the drush command to generate this subtheme,
+ * it should be named for you.
+ *
+ * This application file (ntest.scss) is where all the partials are
+ * imported.
+ */
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Import normalize.css
+@import "../bower_components/normalize.css/normalize.css";
+
+// Import Bourbon.
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+// Import Neat.
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+@import "../bower_components/neat/app/assets/stylesheets/neat-helpers";
+
+// Import layout.
+@import "base/base";
+@import "base/layout";
+
+// Import Drupal element overrides
+@import "common/messages";
+@import "common/tables";
+@import "common/tasks";
+
+// Import your components here.
+@import "components/navigation";
+@import "components/breadcrumb";
+@import "components/hero";
+@import "components/expander";
+@import "components/video";
+@import "components/flexbox";
+@import "components/footer";
