@@ -8,6 +8,8 @@
 ###How to use
 
 * Download/clone files
+* install bower and gulp globaly <sudo npm -g bower && sudo npm -g gulp>
 * Run "npm install"
+* Run "bower install"
 * Run "gulp"
 * Pow!

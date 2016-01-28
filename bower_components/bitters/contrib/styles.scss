@@ -1,0 +1,19 @@
+@import "bourbon";
+@import "../app/assets/stylesheets/base";
+
+body {
+  margin: 0 0 ($base-spacing * 2);
+}
+
+.container {
+  @include margin(null auto);
+  @include padding(null $base-spacing);
+  max-width: 500px;
+}
+
+.welcome-message {
+  @include padding($base-spacing null);
+  background-color: #f2f2f2;
+  margin-bottom: $base-spacing;
+  text-align: center;
+}

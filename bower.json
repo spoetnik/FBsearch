@@ -1,0 +1,16 @@
+{
+  "name": "FB_search",
+  "version": "1.0.0",
+  "authors": [
+    "Martijn de Geus <martijn@side-shore.nl>"
+  ],
+  "description": "FB search static files and resources.",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2",
+    "bitters": "~1.2.0",
+    "normalize.css": "~3.0.2"
+  }
+}
