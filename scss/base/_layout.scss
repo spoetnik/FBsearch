@@ -4,6 +4,11 @@ body {
   @include padding(0);
 
 }
+
+  .main-container {
+	@include padding(60px null null null);
+  }
+  
   .content {
     @include outer-container;
   }

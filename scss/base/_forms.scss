@@ -88,3 +88,18 @@ select {
   max-width: 100%;
   width: auto;
 }
+
+form {
+  @include margin(null null 40px null);
+  @include padding(10px);
+
+  @include border-color(grey);
+  @include border-style(dotted);
+  
+  @include border-width(1px);
+
+  @include border-top-radius(5px);
+  @include border-right-radius(5px);
+  @include border-bottom-radius(5px);
+  @include border-left-radius(5px);
+}
