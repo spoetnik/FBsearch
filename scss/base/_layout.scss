@@ -6,14 +6,8 @@ body {
 }
 
   .main-container {
-	@include padding(60px null null null);
+	 @include padding(60px null null null);
+    @include margin(null auto null auto);
+    max-width: 68em;
   }
   
-  .content {
-    @include outer-container;
-  }
-
-  .flex-boxes {
-  	@include outer-container;
-  	@include padding(null null 200px null);
-  }

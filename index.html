@@ -13,22 +13,43 @@
     </head>
     <body>
 
-        <div class="video">
-          <div class="video-wrapper">
-              <iframe src="http://www.youtube.com/embed/1fHJa-FeCSU?showinfo=0&iv_load_policy=3&controls=0" frameborder="0" allowfullscreen></iframe>
+
+    <header class="navigation" role="banner">
+      <div class="navigation-wrapper">
+      <i class="logo">
+        <u>Facebook Logo</u>
+      </i>
+        <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Search</a>
+        <div class="navigation-tools">
+          <div class="search-bar">
+            <form role="search">
+              <input type="search" id="fb_username" placeholder="Enter Username" />
+              <button id="fb_get" type="button">
+                <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+              </button>
+            </form>
           </div>
         </div>
+      </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero-inner">
+        <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png
+    " alt="Logo Image"></a>
+            <div class="hero-copy">
+                <h1>Facebook URL hacks</h1>
+                <p>Enter Facebook username in the search box, and me amazed..</p>    
+            </div>
+        </div>
+    </div>
 
 
-        <div class="main-container">
-
-            <div class="content">
-
-                <input placeholder="USERNAME" name="" id="fb_username" type="text">
-                <input value="Get FB ID" id="fb_get" type="button">
-
-                <h1> PERSONAL SEARCH </h1>
-
+    <div class="main-container">
+        <ul class="accordion-tabs-minimal">
+          <li class="tab-header-and-content">
+            <a href="#" class="tab-link is-active">Personal Search</a>
+            <div class="tab-content">
                 <form onsubmit="postscommented(this.number.value); return false;">
                     <label> Posts that the person commented on?</label>
                     <input name="number" class="fb_user_id" size="30" placeholder="Type Facebook ID" type="text">
@@ -64,55 +85,18 @@
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
                 </form>
-
             </div>
+          </li>
 
-
-            <div class="content">
-                <h1>NEW: SEARCH POSTINGS</h1>
-                <form name="fb-search">
-                    <label>Search:
-                      <input id="search" name="search" required="" autofocus="" onkeyup="updatelink(this);" type="text"><br>
-                    </label>
-                </form>
-
-                <ul>
-                    <li><a id="link1" href="https://www.facebook.com/search/str/xxx/stories-keyword/stories-live" target="_blank">Search for <span id="txt1">xxx</span> in THE LATEST postings</a></li>
-                    <li><a id="link2" href="https://www.facebook.com/search/str/xxx/stories-keyword/" target="_blank">Search for <span id="txt2">xxx</span> in ALL postings</a></li>
-                </ul>
-
-            </div>
-
-
-
-            <div class="content">
-                <h1>LOCATION SEARCH</h1>
-                <strong>Countries: who went where?</strong>
-                <div id="inputrows">
-                    <div id="inputrow1">
-                      <select id="Selector1">
-                        <option selected="selected" value="pages-named/residents/present"> Location (country, city) </option>
-                      </select>
-                      <input id="item1" type="text">
-                      <input id="AndButton" value="COMBINE WITH" onclick="AndFunction(2)" type="submit">
-                      <span id="andlable2"></span>
-                    </div>
-                </div>
-                <button type="button" id="OpenFacebook" onclick="OpenFacebook(1)">Search</button>
-
-            </div>
-
-
-            <div class="content">
-                <strong>Buildings: who went where?</strong>
+          <li class="tab-header-and-content">
+            <a href="#" class="tab-link">Places visited</a>
+            <div class="tab-content">
                 <form onsubmit="allplaces(this.number.value); return false;">
+                    <label><em>All places,</em> Visited by</label>
                     <input name="number" size="30" class="fb_user_id" placeholder="Type Facebook ID" type="text">
                     <input value="GO" type="submit">
-                    <label><em>All places,</em> Visited by</label> <br>
                 </form>
-            </div>
 
-            <div class="content">
                 <strong>Specify buildings</strong>
 
                 <form onsubmit="barsvisited(this.number.value); return false;">
@@ -158,8 +142,42 @@
                 </form>
 
             </div>
+          </li>
 
-        </div>
+          <li class="tab-header-and-content">
+            <a href="#" class="tab-link">Postings</a>
+            <div class="tab-content">
+                <form name="fb-search">
+                    <label>Search:
+                      <input id="search" name="search" required="" autofocus="" onkeyup="updatelink(this);" type="text"><br>
+                    </label>
+                </form>
+
+                <ul>
+                    <li><a id="link1" href="https://www.facebook.com/search/str/xxx/stories-keyword/stories-live" target="_blank">Search for <span id="txt1">xxx</span> in THE LATEST postings</a></li>
+                    <li><a id="link2" href="https://www.facebook.com/search/str/xxx/stories-keyword/" target="_blank">Search for <span id="txt2">xxx</span> in ALL postings</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="tab-header-and-content">
+            <a href="#" class="tab-link">Location Search</a>
+            <div class="tab-content">
+                <strong>Countries: who went where?</strong>
+                <div id="inputrows">
+                    <div id="inputrow1">
+                      <select id="Selector1">
+                        <option selected="selected" value="pages-named/residents/present"> Location (country, city) </option>
+                      </select>
+                      <input id="item1" type="text">
+                      <input id="AndButton" value="COMBINE WITH" onclick="AndFunction(2)" type="submit">
+                      <span id="andlable2"></span>
+                    </div>
+                </div>
+                <button type="button" id="OpenFacebook" onclick="OpenFacebook(1)">Search</button>   
+            </div>
+          </li>
+        </ul>
+    </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

@@ -14,7 +14,7 @@
 @charset "UTF-8";
 
 // Import normalize.css
-@import "../bower_components/normalize.css/normalize.css";
+//@import "../bower_components/normalize.css/normalize.css";
 
 // Import Bourbon.
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
@@ -36,6 +36,7 @@
 @import "components/navigation";
 @import "components/breadcrumb";
 @import "components/hero";
+@import "components/accordiontabs";
 @import "components/expander";
 @import "components/video";
 @import "components/flexbox";
