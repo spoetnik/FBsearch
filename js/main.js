@@ -1,4 +1,25 @@
+// Ajax Username to Userid
+$(function() {
+    $("body").on("click", "#fb_get", function() {
+        username = $("#fb_username").val();
+        $.ajax({
+            url: "profile_id.php?username=" + username,
+            type: "get",
+            dataType: "json",
+            success: function(result) {
+                if (result['id']) {
+                    $(".fb_user_id").val(result['id']);
+                } else {
+                    alert("No Facebook ID found. Maybe this user is private?");
+                }
+            },
+            error: function() {}
+        });
 
+    });
+
+
+});
 
 //Personal Search
 
